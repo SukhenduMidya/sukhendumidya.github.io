@@ -3,45 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COA Notes</title>
+    <title>COA Lab Notes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { font-family: sans-serif; background: #f4f4f9; padding: 20px; text-align: center; }
-        .container { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        h1 { color: #333; margin-bottom: 20px; }
-        
-        .file-item {
-            display: flex; justify-content: space-between; align-items: center;
-            background: #fff; border: 1px solid #ddd; padding: 15px;
-            margin-bottom: 10px; border-radius: 8px; transition: 0.2s;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background: #f4f4f9;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
         }
-        .file-item:hover { border-color: #007bff; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        h1 { color: #333; margin-bottom: 25px; border-bottom: 2px solid #eee; padding-bottom: 15px; }
         
-        .file-name { font-weight: bold; color: #555; display: flex; align-items: center; gap: 10px; }
+        .file-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            transition: 0.2s;
+            text-align: left;
+        }
+        .file-card:hover {
+            border-color: #007bff;
+            box-shadow: 0 4px 12px rgba(0,123,255,0.1);
+            transform: translateY(-2px);
+        }
         
+        .file-info { display: flex; align-items: center; gap: 15px; }
+        .icon-box { 
+            width: 50px; height: 50px; background: #ffebee; color: #d32f2f; 
+            border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 24px;
+        }
+        .file-details h3 { margin: 0; font-size: 16px; color: #333; font-weight: bold; }
+        .file-details p { margin: 5px 0 0; font-size: 13px; color: #666; }
+
         .btn-download {
-            background: #28a745; color: white; text-decoration: none;
-            padding: 8px 15px; border-radius: 5px; font-size: 14px;
+            background: #007bff; color: white; text-decoration: none;
+            padding: 10px 20px; border-radius: 6px; font-weight: 600; font-size: 14px;
+            transition: 0.2s; display: flex; align-items: center; gap: 8px;
         }
-        .back-btn { display: inline-block; margin-top: 20px; text-decoration: none; color: #666; }
+        .btn-download:hover { background: #0056b3; }
+
+        .back-link { display: block; margin-top: 25px; color: #666; text-decoration: none; font-size: 14px; }
+        .back-link:hover { color: #333; text-decoration: underline; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>📚 COA Materials</h1>
+        <h1>📚 COA Resources</h1>
 
-        <div class="file-item">
-            <div class="file-name"><i class="fas fa-file-pdf" style="color:#d32f2f;"></i> Unit 1 Notes</div>
-            <a href="../../uploads/COA/Unit1.pdf" download class="btn-download">Download</a>
+        <div class="file-card">
+            <div class="file-info">
+                <div class="icon-box"><i class="fas fa-book"></i></div>
+                <div class="file-details">
+                    <h3>Complete Lab Manual</h3>
+                    <p>Experiments 1 to 15 (Full Syllabus)</p>
+                </div>
+            </div>
+            
+            <a href="../../uploads/COA/COA_Manual.pdf" download class="btn-download">
+                <i class="fas fa-download"></i> Download
+            </a>
         </div>
-
-        <div class="file-item">
-            <div class="file-name"><i class="fas fa-file-pdf" style="color:#d32f2f;"></i> Assignment 1</div>
-            <a href="../../uploads/COA/Assignment1.pdf" download class="btn-download">Download</a>
-        </div>
-        
-        <a href="index.html" class="back-btn">← Back to Subjects</a>
+        <a href="index.html" class="back-link">← Back to Dashboard</a>
     </div>
 
 </body>
