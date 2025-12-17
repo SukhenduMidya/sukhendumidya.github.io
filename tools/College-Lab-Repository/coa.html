@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COA Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: sans-serif; background: #f4f4f9; padding: 20px; text-align: center; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; margin-bottom: 20px; }
+        
+        .file-item {
+            display: flex; justify-content: space-between; align-items: center;
+            background: #fff; border: 1px solid #ddd; padding: 15px;
+            margin-bottom: 10px; border-radius: 8px; transition: 0.2s;
+        }
+        .file-item:hover { border-color: #007bff; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        
+        .file-name { font-weight: bold; color: #555; display: flex; align-items: center; gap: 10px; }
+        
+        .btn-download {
+            background: #28a745; color: white; text-decoration: none;
+            padding: 8px 15px; border-radius: 5px; font-size: 14px;
+        }
+        .back-btn { display: inline-block; margin-top: 20px; text-decoration: none; color: #666; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>📚 COA Materials</h1>
+
+        <div class="file-item">
+            <div class="file-name"><i class="fas fa-file-pdf" style="color:#d32f2f;"></i> Unit 1 Notes</div>
+            <a href="../../uploads/COA/Unit1.pdf" download class="btn-download">Download</a>
+        </div>
+
+        <div class="file-item">
+            <div class="file-name"><i class="fas fa-file-pdf" style="color:#d32f2f;"></i> Assignment 1</div>
+            <a href="../../uploads/COA/Assignment1.pdf" download class="btn-download">Download</a>
+        </div>
+        
+        <a href="index.html" class="back-btn">← Back to Subjects</a>
+    </div>
+
+</body>
+</html>
