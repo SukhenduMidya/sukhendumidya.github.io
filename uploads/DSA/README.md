@@ -6,36 +6,66 @@
     <title>DSA Lab Notes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: #f4f4f9; padding: 20px; display: flex; justify-content: center; }
-        .container { width: 100%; max-width: 600px; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center; }
-        h1 { color: #333; margin-bottom: 25px; border-bottom: 2px solid #eee; padding-bottom: 15px; }
-        .file-card { display: flex; justify-content: space-between; align-items: center; background: #fff; border: 1px solid #e0e0e0; padding: 20px; margin-bottom: 15px; border-radius: 8px; transition: 0.2s; text-align: left; }
-        .file-card:hover { border-color: #007bff; box-shadow: 0 4px 12px rgba(0,123,255,0.1); transform: translateY(-2px); }
-        .file-info { display: flex; align-items: center; gap: 15px; }
-        .icon-box { width: 50px; height: 50px; background: #e3f2fd; color: #1976d2; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 24px; }
-        .file-details h3 { margin: 0; font-size: 16px; color: #333; font-weight: bold; }
-        .file-details p { margin: 5px 0 0; font-size: 13px; color: #666; }
-        .btn-download { background: #007bff; color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; font-size: 14px; display: flex; align-items: center; gap: 8px; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* Blue Gradient for DSA */
+            background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+            padding: 20px; display: flex; justify-content: center; min-height: 100vh;
+        }
+        .container {
+            width: 100%; max-width: 700px; background: white; padding: 30px;
+            border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        h1 { text-align: center; color: #007bff; margin-bottom: 30px; }
+        
+        .file-card {
+            display: flex; justify-content: space-between; align-items: center;
+            background: #fff; border: 1px solid #e3f2fd; padding: 20px;
+            margin-bottom: 15px; border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .file-info h3 { margin: 0 0 5px; color: #333; font-size: 16px; }
+        .file-info p { margin: 0; color: #777; font-size: 12px; }
+        
+        .btn-group { display: flex; gap: 10px; }
+        
+        .btn {
+            padding: 8px 15px; border-radius: 6px; text-decoration: none;
+            font-size: 13px; font-weight: bold; transition: 0.2s; display: flex; align-items: center; gap: 5px;
+        }
+        /* Button Colors */
+        .btn-view { background: #e2e8f0; color: #333; }
+        .btn-view:hover { background: #cbd5e0; }
+        
+        .btn-download { background: #007bff; color: white; }
         .btn-download:hover { background: #0056b3; }
-        .back-link { display: block; margin-top: 25px; color: #666; text-decoration: none; font-size: 14px; }
+
+        .back-link { display: block; text-align: center; margin-top: 20px; color: #007bff; text-decoration: none; font-weight: bold;}
     </style>
 </head>
 <body>
+
     <div class="container">
         <h1>🖥️ DSA Resources</h1>
+
         <div class="file-card">
             <div class="file-info">
-                <div class="icon-box"><i class="fas fa-code"></i></div>
-                <div class="file-details">
-                    <h3>DSA Lab Manual</h3>
-                    <p>Complete Notes & Code</p>
-                </div>
+                <h3>DSA Lab Manual</h3>
+                <p>Notes & Code Examples</p>
             </div>
-            <a href="../../uploads/DSA/dsa_notes.pdf" download class="btn-download">
-                <i class="fas fa-download"></i> Download
-            </a>
+            <div class="btn-group">
+                <a href="../../uploads/DSA/dsa_notes.pdf" target="_blank" class="btn btn-view">
+                    <i class="fas fa-eye"></i> View
+                </a>
+                
+                <a href="../../uploads/DSA/dsa_notes.pdf" download class="btn btn-download">
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
         </div>
+
         <a href="index.html" class="back-link">← Back to Dashboard</a>
     </div>
+
 </body>
 </html>
