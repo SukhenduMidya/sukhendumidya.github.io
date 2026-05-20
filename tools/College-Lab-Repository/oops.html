@@ -4,72 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>OOPS Lab Manual</title>
 
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #0f172a;
-            font-family: Arial, sans-serif;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
         }
 
-        .container {
-            background: #1e293b;
-            padding: 40px;
-            border-radius: 20px;
-            text-align: center;
-            width: 350px;
-            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#0f172a,#1e293b);
         }
 
-        h1 {
-            margin-bottom: 20px;
-            font-size: 32px;
+        .container{
+            background:#334155;
+            padding:50px;
+            border-radius:25px;
+            text-align:center;
+            color:white;
+            width:400px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.4);
         }
 
-        p {
-            color: #cbd5e1;
-            margin-bottom: 30px;
+        h1{
+            font-size:42px;
+            margin-bottom:20px;
         }
 
-        .download-btn {
-            background: #06b6d4;
-            color: black;
-            border: none;
-            padding: 15px 25px;
-            font-size: 18px;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: 0.3s;
+        p{
+            color:#cbd5e1;
+            margin-bottom:35px;
+            font-size:18px;
         }
 
-        .download-btn:hover {
-            background: #22d3ee;
-            transform: scale(1.05);
+        .btn{
+            display:inline-block;
+            text-decoration:none;
+            background:#06b6d4;
+            color:black;
+            padding:16px 30px;
+            border-radius:15px;
+            font-size:20px;
+            font-weight:bold;
+            transition:0.3s;
         }
+
+        .btn:hover{
+            background:#22d3ee;
+            transform:scale(1.05);
+        }
+
     </style>
+
 </head>
 
 <body>
 
     <div class="container">
 
-        <h1>OOPS Lab Manual</h1>
+        <h1>💻 OOPS Manual</h1>
 
         <p>
-            Click the button below to download the manual PDF.
+            Click below to download the PDF manual
         </p>
 
-        <a href="../../uploads/oops_manual.pdf" download>
-            <button class="download-btn">
-                Download PDF
-            </button>
+        <a href="../../uploads/oops_manual.pdf" class="btn" download>
+
+            Download PDF
+
         </a>
 
     </div>
