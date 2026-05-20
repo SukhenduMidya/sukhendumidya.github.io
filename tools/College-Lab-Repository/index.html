@@ -10,90 +10,76 @@
     <style>
 
         *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
         }
 
         body{
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg,#5b7cfa,#7c4dff);
-            padding: 20px;
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#5b7cfa,#7c4dff);
+            padding:20px;
         }
 
         .container{
-            width: 100%;
-            max-width: 1000px;
-            background: #f5f5f5;
-            border-radius: 30px;
-            padding: 50px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            width:100%;
+            max-width:900px;
+            background:#f5f5f5;
+            border-radius:30px;
+            padding:50px;
+            box-shadow:0 20px 50px rgba(0,0,0,0.3);
+            text-align:center;
         }
 
-        .title{
-            text-align: center;
-            margin-bottom: 40px;
+        h1{
+            font-size:55px;
+            color:#222;
+            margin-bottom:10px;
         }
 
-        .title h1{
-            font-size: 55px;
-            color: #222;
-            margin-bottom: 10px;
-        }
-
-        .title p{
-            color: #555;
-            font-size: 20px;
+        .subtitle{
+            color:#555;
+            font-size:20px;
+            margin-bottom:50px;
         }
 
         .cards{
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-            gap: 30px;
-            margin-top: 40px;
+            display:flex;
+            justify-content:center;
         }
 
         .card{
-            text-decoration: none;
-            color: white;
-            padding: 40px 20px;
-            border-radius: 25px;
-            text-align: center;
-            transition: 0.3s;
+            text-decoration:none;
+            color:white;
+            width:260px;
+            padding:40px 20px;
+            border-radius:25px;
+            background:linear-gradient(135deg,#ff9a9e,#f6416c);
+            transition:0.3s;
+            box-shadow:0 10px 30px rgba(0,0,0,0.2);
         }
 
         .card:hover{
-            transform: translateY(-8px) scale(1.03);
-        }
-
-        .card h2{
-            font-size: 35px;
-            margin: 15px 0;
-        }
-
-        .card p{
-            font-size: 18px;
-            opacity: 0.9;
-        }
-
-        .oops{
-            background: linear-gradient(135deg,#ff9a9e,#f6416c);
-        }
-
-        .java{
-            background: linear-gradient(135deg,#74ebd5,#009efd);
-        }
-
-        .python{
-            background: linear-gradient(135deg,#43e97b,#38f9d7);
+            transform:translateY(-8px) scale(1.03);
         }
 
         .icon{
-            font-size: 55px;
+            font-size:60px;
+            margin-bottom:20px;
+        }
+
+        .card h2{
+            font-size:38px;
+            margin-bottom:10px;
+        }
+
+        .card p{
+            font-size:18px;
+            opacity:0.9;
         }
 
     </style>
@@ -104,29 +90,22 @@
 
     <div class="container">
 
-        <div class="title">
-            <h1>🚀 College Lab Repo</h1>
-            <p>Access all lab manuals in one place</p>
-        </div>
+        <h1>🚀 College Lab Repo</h1>
+
+        <p class="subtitle">
+            Access all lab manuals in one place
+        </p>
 
         <div class="cards">
 
-            <a href="oops.html" class="card oops">
+            <a href="oops.html" class="card">
+
                 <div class="icon">💻</div>
+
                 <h2>OOPS</h2>
+
                 <p>Object Oriented Programming</p>
-            </a>
 
-            <a href="java.html" class="card java">
-                <div class="icon">☕</div>
-                <h2>JAVA</h2>
-                <p>Java Programming Lab</p>
-            </a>
-
-            <a href="python.html" class="card python">
-                <div class="icon">🐍</div>
-                <h2>PYTHON</h2>
-                <p>Python Programming Lab</p>
             </a>
 
         </div>
