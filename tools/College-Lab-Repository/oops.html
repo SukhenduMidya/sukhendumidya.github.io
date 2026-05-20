@@ -1,18 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Java Lab Manual</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPS Lab Manual</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0f172a;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        p {
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        .download-btn {
+            background: #06b6d4;
+            color: black;
+            border: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .download-btn:hover {
+            background: #22d3ee;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 
-<body style="background:black; color:white; text-align:center;">
+<body>
 
-    <h1>Java Lab Manual</h1>
+    <div class="container">
 
-    <a href="../../uploads/java_manual.pdf" download>
-        <button style="padding:15px; font-size:20px;">
-            Download PDF
-        </button>
-    </a>
+        <h1>OOPS Lab Manual</h1>
+
+        <p>
+            Click the button below to download the manual PDF.
+        </p>
+
+        <a href="../../uploads/oops_manual.pdf" download>
+            <button class="download-btn">
+                Download PDF
+            </button>
+        </a>
+
+    </div>
 
 </body>
+
 </html>
